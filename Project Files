@@ -1,0 +1,103 @@
+Goals of the program:
+To impact and benefit society/world.
+
+The Community Garden Program aims to positively impact society in several ways:
+Promoting Sustainable Living – It provides a platform for community members to access fresh produce at no cost. The program also encourages sustainable living practices.
+
+Community Engagement - The program fosters community engagement by bringing residents together to participate in gardening activities, share resources, and contribute to the overall well-being of the community.
+
+Addressing Food Insecurity - For individuals facing food insecurity, the program offers an opportunity to access nutritious food without financial constraints. This contributes to the fight against hunger in the community.
+
+Encouraging Environmental Awareness - Community gardening promotes environmental awareness by having individuals engage in the cultivation of fruits and vegetables. This will help reduce reliance on commercially produced food.
+
+Fostering a Sense of Ownership - Participants in the program may develop a sense of ownership and responsibility for the garden. This can lead to increased civic pride and a stronger sense of community.
+
+
+The program addresses several societal challenges:
+Limited Access to Fresh Produce - Many individuals face challenges accessing fresh, locally grown produce. The program addresses this by providing a community space for gardening and sharing the harvest.
+
+Food Insecurity - The program aims to alleviate food insecurity by offering community members the opportunity to obtain fresh produce at no cost.
+
+Lack of Community Spaces – Modern city environments often lack communal spaces for residents to engage in shared activities. The community garden addresses this gap by providing a dedicated space for residents to connect and collaborate.
+
+
+Functionality of the program:
+Registration: Users can enter their name and contact information for registration. 
+
+Scheduling Appointments:  Allows for the scheduling of appointments to visit the community garden. (Users must have registered first.) 
+
+Volunteering: Users can schedule volunteer time at the community garden. (Limit of 5 hours per day)
+
+Making Donations: Users can make monetary, seed, tool, or fertilizer donations to support the community garden.
+
+Displaying Community Member Information: Information about registered community members, including their donations and volunteer hours, is displayed on screen. 
+
+Writing Data to File: User, appointment, donation amounts, and volunteer hours data can be written to a text file.
+
+Exit: Closes the program with a friendly message. 
+
+
+Programming Concepts Used:
+Classes and Objects: The program is structured using classes and objects to represent various entities such as users, appointments, and donation options.
+
+Interfaces: The program uses interfaces to define contracts for donation options, community members' information, and volunteer actions.
+
+Arrays and Lists: Arrays and lists are used to store multiple instances of objects. For example, arrays are used to store user objects, appointment objects, and donation amounts.
+
+File Handling: The program reads from and writes to a text file to store user data, appointment details, donation amounts, and volunteer hours.
+
+Exception Handling: Exception handling is used to handle errors that may occur during input parsing, such as invalid date formats or non-numeric inputs.
+
+User Input Handling: Scanner class is used to handle user input from the console. Input validation is also implemented.
+
+Inheritance: Inheritance is utilized where a volunteer appointment inherits from a general appointment class. This allows for code reuse and a more organized class hierarchy.
+
+Polymorphism: Polymorphism is demonstrated through method overriding, such as the displayAppointmentInfo() method in the VolunteerAppointment class.
+
+Encapsulation: Data encapsulation is employed to hide the internal state of objects and expose only the necessary functionality through methods.
+
+Static Members and Methods: Static variables and methods are used to maintain shared data and behavior across instances of a class. The allUsers list in the User class is static and shared among all instances of the class.
+
+
+Target Audience:
+The targeted audience for the Community Garden Program includes:
+
+Residents of Moreno Valley - The program is designed for the residents of Moreno Valley. Those who are interested in participating in community gardening, accessing fresh produce, and contributing to a sustainable/vibrant community.
+
+Residents of other Cities- It can be modified to fit the needs of other municipalities. The quickest way to do this would be updating the welcome message to say the name of the location it is being used by.
+
+Individuals Facing Food Insecurity – It is also particularly beneficial for individuals or families experiencing food insecurity. It offers them a resource to obtain fresh, nutritious food without financial burden.
+
+Community Organizations and Volunteers - Organizations and volunteers interested in community development, sustainability, and supporting initiatives that promote healthy living.
+
+Environmental Enthusiasts - Individuals passionate about environmental sustainability may find value in participating in or supporting the community garden program.
+
+
+Program Strengths:
+Modular Design: The program is organized with classes and interfaces. There are comments throughout the code making it easier for developers to understand the flow and logic of the program.
+
+User Interaction: The program is user friendly with clear options and error messages when users input is invalid.
+
+Error Handling: The program handles various error scenarios such as invalid user input, date parsing errors, and volunteer hour limits. An informative error message is shown to the user when this occurs.
+
+Data Persistence: The program includes functionality to write user, appointment, donation amounts, and volunteer hours data to a text file. This allows for data persistence between program runs.
+
+Code Reusability: Including interfaces and classes in the program promotes code reusability. It allows for easy extension and modification of functionality.
+
+
+
+Program Limitations:
+
+Security Concerns - The program doesn't address security concerns such as data encryption, secure storage of sensitive information, and protection against potential vulnerabilities. Considerations for how to implement some security measures is critical for municipalities to use it. 
+
+Static Arrays: The program uses static arrays for storing user, appointment, donation, and volunteer hour data. This won’t scale well since the population of Moreno Valley is over 200,000. It will need to be updated in the future.
+
+Input Validation: The program performs input validation for some user inputs (e.g., name and contact information).
+
+Error Handling: While the program handles certain exceptions, it does not handle all potential exceptions that may arise during execution. There are possibilities for runtime errors and crashes.
+
+File I/O Handling: The program writes data to a text file, but it does not handle file I/O exceptions. It simply prints a stack trace to the console. It will not be useful in the case of catching errors. 
+
+Limited Donation Options: The program has a fixed set of donation options (monetary, seeds, tools, fertilizer). This may not cover all possible types of donations that users may want to make. Adding flexibility in donation options could enhance the program's usability and appeal.
+
+User Interface: The program is text based and the user interacts with the program by typing input on the keyboard. Ideally, a GUI using Swing would be used for the interaction with the user. Program would be more user friendly if they could see a calendar and choose a date for an appointment by clicking on it. A GUI would make the program more appealing to users and could increase the amount of donations, and volunteering hours.
