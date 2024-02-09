@@ -10,7 +10,8 @@ Program will stop storing data under the current user once a new registration is
 
 Option 5 is meant to display the community members information as well as their donations, appointment, or volunteer dates. 
 
-Option 6 will write the data to a .txt file. 
+Option 6 will write the data to a .txt file.
+
 Users can close the program with option 7.
 
 Limitations: 
