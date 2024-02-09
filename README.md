@@ -1,3 +1,6 @@
+Members: Matthew Godinez and Allyson Lopez
+
+
 How to run the program:
 Copy and paste code into notepad++  or an IDE. Save as CommunityGarden.Java    Compile code with javac CommunityGarden.java
 Once program is running.
